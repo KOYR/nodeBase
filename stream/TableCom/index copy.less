@@ -1,0 +1,137 @@
+.repdef {
+
+    .repdef-wrap {
+        background-color: #fff;
+        margin: 0 20px 12px 20px;
+        height: 100%;
+        border: 1px solid #D9D9D9;
+        overflow: hidden;
+
+        .repdef-table {
+            height: 100%;
+            overflow: scroll;
+
+        }
+    }
+
+    .rept-tit-con,
+    .rept-tab-item {
+        .rept-row {
+            // flex: 300 1;
+            min-width: 100px;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 5px;
+            border-right: 1px solid #D9D9D9;
+        }
+        .rept-row-idx{
+            min-width: 30px;
+            max-width: 30px;
+            flex: 30;
+            justify-content: center;
+            align-items: center;
+            border-right: 1px solid #D9D9D9;
+        }
+
+        .rept-area-col-item {
+            &:nth-last-child(1) {
+                border-right: none;
+            }
+
+            // 单列指标
+            .rept-col {
+                height: 35px;
+                display: flex;
+                align-items: center;
+                border-right: 1px solid #D9D9D9;
+
+                .rept-col-name {
+                    min-width: 70px;
+                    max-width: 120px;
+                    // min-width: 70px;
+                    // width: 70px;
+                    flex: 70;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    border-left: 1px solid #D9D9D9;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+
+                    &:nth-child(1) {
+                        border-left: none;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    .rept-tit-con {
+        background: #F4F4F4;
+        max-height: 59px;
+        display: flex;
+        border-bottom: 1px solid #D9D9D9;
+
+        .rept-row {
+            min-height: 36px;
+            max-height: 59px;
+        }
+
+        .rept-area-col-con {
+            display: flex;
+        }
+
+        // 单个度量域
+        .rept-area {
+            min-height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // background-color: cadetblue;
+            border-bottom: 1px solid #D9D9D9;
+            border-right: 1px solid #D9D9D9;
+
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            
+            min-width: 70px;
+            max-width: 120px;
+            flex: 70;
+
+            &:nth-last-child(1) {
+                border-right: none;
+            }
+        }
+
+    }
+
+
+    //列表的 
+    .rept-tab-con {
+        .rept-tab-item {
+            display: flex;
+            border-bottom: 1px solid #D9D9D9;
+
+            .rept-row {
+                height: 36px;
+            }
+
+            .rept-area-col-con {
+                display: flex;
+            }
+
+            // 单列指标
+            .rept-area-col-item {
+                height: 36px;
+            }
+        }
+    }
+
+}

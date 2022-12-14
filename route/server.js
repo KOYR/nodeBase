@@ -13,7 +13,7 @@ function start(route) {
         response.end()
     }
 
-    http.createServer(onRequest).listen(8888)
+    http.createServer(onRequest).listen(8888) //打开localhost:8888会出现
     console.log('Server has started')
 }
 

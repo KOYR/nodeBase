@@ -104,11 +104,11 @@
  * @type {Buffer} 回调函数
  */
 // var fs = require('fs')
-// //异步带Sync
+// //异步不带Sync
 // var dataSync = fs.readFileSync('input.txt')
 // console.log(dataSync.toString())
 // console.log('引入异步结束')
-// //同步不带Sync
+// //同步带Sync
 // fs.readFile('input.txt', function (err, dataSame){
 //     console.log(dataSame.toString())
 // })

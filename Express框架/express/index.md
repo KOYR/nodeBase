@@ -1,0 +1,15 @@
+express是一个为node.js设计的web开发框架 基于nodejs平台
+express是一个简洁而灵活的node.js web应用框架，提供了一系列强大特性帮助你创建各种web应用和丰富的HTTP工具
+使用Express可以快速搭建一个完整功能的网站
+express框架核心特性包括
+可以设置中间件来响应HTTP请求
+定义了路由表用于执行不同的HTTP请求动作
+可以通过向模版传递参数来动态渲染HTML页面
+
+
+
+
+
+
+express_demo2 联系node请求和响应
+express_demo3 访问静态文件

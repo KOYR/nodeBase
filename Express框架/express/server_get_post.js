@@ -5,23 +5,34 @@ var bodyParser = require('body-parser');
 // 创建 application/x-www-form-urlencoded 编码解析
 var urlencodedParser =  bodyParser.urlencoded({ extended: false })
 
-app.use(express.static('../public'))
+app.use(express.static('./public'))
 
-app.get('/index.html', (req, res) => {
+app.get('/upload.html', (req, res) => {
     console.log(__dirname)
-    res.sendFile(__dirname + '/' + 'index.html')
+    res.sendFile(__dirname + '/' + 'upload.html')
 })
 
+
+
+/// get
 app.get('/process_get', (req, res) => {
+    const aaa = [1,2,3]
+    const bbb = [4,5,6]
     response = {
         first_name: req.query.first_name,
-        last_name: req.query.last_name
+        last_name: req.query.last_name,
+
+
+        first_name_get: aaa,
+        end_name_get: bbb
     }
     console.log(response)
     res.end(JSON.stringify(response))
 })
 
 
+
+/// post
 app.post('/process_post', urlencodedParser, (req, res) => {
     console.log(req.body, 'req')
     response = {

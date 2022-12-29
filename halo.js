@@ -130,3 +130,18 @@
 // console.log('server running at http://127.0.0.1:8888/'); //node 终端中打印
 //
 // //npm adduser 或者 npm login 登陆 密码名字加出生年月+
+
+
+var https = require('https');
+
+https.get('https://www.baidu.com/', function(res) {
+    console.log("statusCode: ", res.statusCode);
+    console.log("headers: ", res.headers);
+
+    res.on('data', function(d) {
+        process.stdout.write(d);
+    });
+
+}).on('error', function(e) {
+    console.error(e);
+});
